@@ -6,20 +6,21 @@ const Footer = () => {
   return <Box 
   bgColor={'blackAlpha.900'} 
   color={'whiteAlpha.700'} 
-  minHeight={'48'}
-  px={'16'} 
-  py={['6','8']}>
+  // maxHeight={['20','20']}
+  // height={['24','50']}
+  px={'14'} 
+  py={['3','4']}
+  >
 
-    <Stack direction={['column', 'row']} height={'full'} alignItems={'center'} >
+    <Stack direction={['column', 'row']} height={'20'} alignItems={'center'} mt={'-1'} >
         <VStack w={'full'} alignItems={['center', 'flex-start']} >
-            <Text fontWeight={'bold'} >About us</Text>
-            <Text fontSize={'sm'} letterSpacing={'widest'} >We are one stop solution to all your Crypto related queries.</Text>
+            <Text fontWeight={'bold'} mb={'-0.5'} >About us</Text>
+            <Text fontSize={'sm'} letterSpacing={'widest'} mb={'-0.5'} >We are one stop solution to all your Crypto related queries.</Text>
         </VStack>
 
         <VStack w={'full'} alignItems={['center', 'flex-end']}>
-            <Image src={img} w={'24'} h={'24'} mt={['4','4']}/>
-            <Text>Developed By</Text>
-            <Text>Harsh Vardhan</Text>
+            <Image src={img} w={'12'} h={'12'} mr={'10'} mb={'-0.5'}/>
+            <Text mb={'-0.5'} >Developed By - Harsh Vardhan</Text>
         </VStack>
 
     </Stack>
